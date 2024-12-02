@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: bolder;
+
+}
+
+
+.bg-huellas{
+  background-image: url("/bg-huellas.svg");
+  background-position: top;
+}
