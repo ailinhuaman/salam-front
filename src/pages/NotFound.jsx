@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 
-function NotFaund() {
+function NotFound() {
   return (
     <div className="bg-[#87ceeb] w-full h-screen flex flex-col justify-center items-center">
       <Navbar />
@@ -11,4 +11,4 @@ function NotFaund() {
   );
 }
 
-export default NotFaund;
+export default NotFound;

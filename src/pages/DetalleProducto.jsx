@@ -34,6 +34,20 @@ export default function DetalleProducto() {
     fetchProduct();
   }, []);
 
+  const buyForWhatsap = (product) => {
+    const mensaje = `Hola! Quisiera comprar el siguiente producto:
+    - Nombre: ${product.name}
+    - Precio: S/ ${product.price}
+    - Marca: ${product.marca}
+    - Categoria: ${product.categori}`;
+
+    const whatsappUrl = `https://wa.me/51930138707?text=${encodeURIComponent(
+      mensaje
+    )}`;
+
+    window.open(whatsappUrl, "_blank"); // Abrir WhatsApp en una nueva pestaña
+  };
+
   return (
     <div className="min-h-screen bg-slate-200">
       {/* Navigation Bar (reused from the main page) */}
@@ -42,10 +56,7 @@ export default function DetalleProducto() {
       {/* Main Content */}
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Back Button */}
-        <Link
-          to="/"
-          className="mb-8 inline-flex items-center "
-        >
+        <Link to="/" className="mb-8 inline-flex items-center ">
           <button className="bg-white text-black px-2 py-2 capitalize font-bold w-fit rounded-full  text-sm hover:border-gray-500 inline-flex items-center gap-2 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -63,9 +74,9 @@ export default function DetalleProducto() {
               <path d="M5 12l14 0" />
               <path d="M5 12l4 4" />
               <path d="M5 12l4 -4" />
-            </svg>Volver a productos
+            </svg>
+            Volver a productos
           </button>
-          
         </Link>
 
         <div className="grid gap-8 md:grid-cols-2">
@@ -111,22 +122,35 @@ export default function DetalleProducto() {
               <h3 className="mb-2 font-semibold">Disponible:</h3>
               <div className="flex gap-2">
                 <button className="bg-white text-black px-3 py-2 capitalize font-bold w-fit rounded-full  text-sm hover:border-gray-500 ">
-                  {product["stock"] > 0? "Disponible": "No Disponible"}
+                  {product["stock"] > 0 ? "Disponible" : "No Disponible"}
                 </button>
               </div>
             </div>
 
             {/* Add to Cart and Wishlist Buttons */}
             <div className="flex gap-4 ">
-              <button className="flex justify-center gap-4 w-full rounded-full bg-black px-6 py-3 text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-  <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-</svg>
+              <button
+                className="flex justify-center gap-4 w-full rounded-full bg-black px-6 py-3 text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                onClick={() => buyForWhatsap(product)}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                  <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                </svg>
                 Comprar por Whatsapp
               </button>
-              
             </div>
           </div>
         </div>

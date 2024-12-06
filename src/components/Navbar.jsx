@@ -12,15 +12,15 @@ function Navbar() {
           />
         </div>
         <div className="hidden md:flex flex-1 justify-center items-center gap-8 ">
-          <Link to="/" className="text-gray-900 hover:text-gray-200">
+          <Link to="/" className="text-gray-700 hover:text-gray-900">
             Perros
           </Link>
 
-          <Link to="/gatos" className="text-gray-900 hover:text-gray-200">
+          <Link to="/gatos" className="text-gray-700 hover:text-gray-900">
             Gatos
           </Link>
 
-          <Link to="/" className="text-gray-900 hover:text-gray-200">
+          <Link to="/nosotros" className="text-gray-700 hover:text-gray-900">
             Nosotros
           </Link>
         </div>
@@ -86,22 +86,18 @@ function Navbar() {
               alt="logo de la empresa"
             />
           </div>
-          <Link to="/" className="text-[#004AAD] hover:text-gray-900 text-3xl">
+          <Link to="/" className="text-[#004AAD] hover:text-gray-700 text-3xl">
             Perros
           </Link>
 
           <Link
             to="/gatos"
-            className="text-[#004AAD] hover:text-gray-900 text-3xl"
+            className="text-[#004AAD] hover:text-gray-700 text-3xl"
           >
             Gatos
           </Link>
 
-          <Link to="/" className="text-[#004AAD] hover:text-gray-900 text-3xl">
-            Servicios
-          </Link>
-
-          <Link to="/" className="text-[#004AAD] hover:text-gray-900 text-3xl">
+          <Link to="/nosotros" className="text-[#004AAD] hover:text-gray-700 text-3xl">
             Nosotros
           </Link>
         </div>

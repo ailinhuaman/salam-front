@@ -17,7 +17,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/" className="text-gray-900 hover:text-gray-700">
+              <Link to="/nosotros" className="text-gray-900 hover:text-gray-700">
                 Nosotros
               </Link>
             </li>
@@ -25,6 +25,11 @@ function Footer() {
             <li>
             <Link to="/terminos" className="text-gray-900 hover:text-gray-700">
                 Política de Privacidad y Tèrminos
+                </Link>
+            </li>
+            <li>
+            <Link to="/admin" className="text-gray-900 hover:text-gray-700">
+                Administrar
                 </Link>
             </li>
             

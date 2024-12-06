@@ -6,7 +6,7 @@ const TermsAndConditions = () => {
   return (
     <div className="bg-[#87ceeb]">
         <Navbar />
-        <div className="bg-[#87ceeb] p-6 rounded-lg shadow-lg max-w-4xl mx-auto my-10 ">
+        <div className="bg-[#fff] p-6 rounded-lg shadow-lg max-w-4xl mx-auto my-10 ">
         
         <h1 className="text-2xl font-bold text-yellow-600 mb-4 text-center">
           Términos y Condiciones de La Casa de Salam
