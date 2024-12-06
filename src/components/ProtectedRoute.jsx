@@ -15,7 +15,7 @@ const ProtectedRoute = ({ children }) => {
       }
 
       try {
-        const response = await fetch("http://127.0.0.1:8000/user/userme", {
+        const response = await fetch("https://salam-back.onrender.com/user/userme", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -20,7 +20,7 @@ export default function Perros() {
   //   setLoading(true);
   //   try {
   //     const response = await apiRequest(
-  //       "http://127.0.0.1:8000/products/1?",
+  //       "https://salam-back.onrender.com/products/1?",
   //       "POST",
   //       { skip: skip, limit: 10 } // Parámetros de consulta
   //     );
@@ -49,7 +49,7 @@ export default function Perros() {
   //   setLoading(true);
   //   try {
   //     const response = await apiRequest(
-  //       "http://127.0.0.1:8000/products/productos-buscar/?",
+  //       "https://salam-back.onrender.com/products/productos-buscar/?",
   //       "GET",
   //       { nombre:name,skip: skip, limit: 10,category_id:1 } // Parámetros de consulta
   //     );
@@ -284,7 +284,7 @@ export default function Perros() {
         </svg>
       }
       apiEndpoint="products"
-      baseUrl="http://127.0.0.1:8000"
+      baseUrl="https://salam-back.onrender.com"
       categoryId={1}
       backgroundImage="https://i.ytimg.com/vi/sFbt7Icd9RI/hq720.jpg"
       backgroundColor="#87ceeb"

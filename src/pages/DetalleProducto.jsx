@@ -16,7 +16,7 @@ export default function DetalleProducto() {
     try {
       setLoading(true);
       const response = await axios.get(
-        `http://127.0.0.1:8000/products/${prodId}`
+        `https://salam-back.onrender.com/products/${prodId}`
       );
       console.log(response);
       // Agregar tallas y colores al estado del producto
@@ -179,7 +179,7 @@ export default function DetalleProducto() {
 //   const fetchProduct = async () => {
 //     try {
 //       const response = await axios.get(
-//         `http://127.0.0.1:8000/products/${tiendaId}`
+//         `https://salam-back.onrender.com/products/${tiendaId}`
 //       );
 //       // Convertir los strings de tallas y colores a arrays
 //       const sizes = JSON.parse(response.data.sizes);
@@ -230,7 +230,7 @@ export default function DetalleProducto() {
 //         <div className="max-sm:w-full bg-[#792D2B]/60 w-1/2 h-screen overflow-y-hidden flex justify-center items-center">
 //           <img
 //             className="w-full object-cover h-full object-top"
-//             src={`http://127.0.0.1:8000${product.image_url.replace(".", "")}`}
+//             src={`https://salam-back.onrender.com${product.image_url.replace(".", "")}`}
 //             alt={product.name}
 //           />
 //         </div>

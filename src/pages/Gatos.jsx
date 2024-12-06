@@ -30,7 +30,7 @@ export default function Gatos() {
         </svg>
       }
       apiEndpoint="products"
-      baseUrl="http://127.0.0.1:8000"
+      baseUrl="https://salam-back.onrender.com"
       categoryId={2}
       backgroundImage="https://es.zooexperte.com/image/cache/catalog/Der%20Zoo%20Exsperte/Blog/kitten-entwicklung-w1920-h1272.jpg"
       backgroundColor="#B988C8"
