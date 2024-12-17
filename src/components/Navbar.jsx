@@ -80,7 +80,7 @@ function Navbar() {
         onClick={() => setIsOpen(!setIsOpen)}
       >
         <div className="rounded-xl bg-white w-[80%] h-[80%] m-auto flex flex-col justify-center items-center gap-6">
-          <div className="flex items-center w-1/2  bg-white">
+          <div className="flex items-center w-1/2 justify-center bg-white">
             <img
               src="https://res.cloudinary.com/dgausbgfo/image/upload/v1734442902/img%20veterinaria/ninxqrd721hincge5bew.jpg"
               alt="logo de la empresa"
