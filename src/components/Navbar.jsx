@@ -84,6 +84,7 @@ function Navbar() {
             <img
               src="https://res.cloudinary.com/dgausbgfo/image/upload/v1734442902/img%20veterinaria/ninxqrd721hincge5bew.jpg"
               alt="logo de la empresa"
+              class="w-24"
             />
           </div>
           <Link to="/" className="text-[#004AAD] hover:text-gray-700 text-3xl">
