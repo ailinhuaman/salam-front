@@ -7,7 +7,7 @@ function Navbar() {
       <div className="relative flex items-center justify-between rounded-full bg-white px-8 py-2 shadow-sm ">
         <div className="flex items-center w-12 p-1 rounded-full">
           <img
-            src="https://res.cloudinary.com/djiro1win/image/upload/v1732798311/img%20veterinaria/prod%202.png"
+            src="https://res.cloudinary.com/dgausbgfo/image/upload/v1734442902/img%20veterinaria/ninxqrd721hincge5bew.jpg"
             alt="logo de la empresa"
           />
         </div>
